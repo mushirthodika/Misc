@@ -26,7 +26,7 @@
        REAL*8, PARAMETER    :: TW_BY_THR=0.666666D0, ONE_BY_FOUR=0.25000000D0
        REAL*8, PARAMETER    :: EMIN=0.00000000D0, EMAX=10.00000000D0
        REAL*8, PARAMETER    :: ZERO=0.00000000D0, DELTA=0.4000000D0
-       REAL*8, PARAMETER    :: PI=3.1415926535897D0
+       REAL*8, PARAMETER    :: PI=3.1415926535897D0, TENE07 = 10000000.000D0
        REAL*8, PARAMETER    :: FACTOR=27.211600000000D0
 !--------------------------------------------------------------------------------
 
@@ -80,7 +80,8 @@
 
               ENDDO 
 
-              WRITE(111,'(2F20.10)') E, G
+              WRITE(111,'(2F20.10)') E, G                         ! X-AXIS in eV
+!              WRITE(111,'(2F20.10)') TENE07/(E*8065.500D0), G    ! X-AXIS in nm
 
           ENDDO
 
