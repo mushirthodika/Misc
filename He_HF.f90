@@ -247,7 +247,7 @@
      write(*,*) "--------------------------------------------------------------------------------"
 
      write(*,*) 
-     write(*,*) "-------The Eigenvectors are as follows:------" 
+     write(*,*) "-------The Eigenvectors are as follows:-------" 
      write(*,*)
 
      do i3 = 1, n
