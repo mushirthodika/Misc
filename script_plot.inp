@@ -1,0 +1,55 @@
+set terminal postscript eps size 6.5,4.5 enhanced color font 'Helvetica,35' lw 3
+set output 'acal-irc-ea-states.eps'
+
+set border linewidth 2.0
+set style line 1 linecolor rgb '#0060ad' linetype 1 linewidth 3  # blue
+set style line 2 linecolor rgb '#dd181f' linetype 1 linewidth 3  # red
+set style line 3 linecolor rgb '#006400' linetype 1 linewidth 3  # darkgreen
+set style line 4 linecolor rgb '#2F4F4F' linetype 1 linewidth 3  # darkslategray
+set style line 5 linecolor rgb '#4B0082' linetype 1 linewidth 3  # indigo
+set style line 6 linecolor rgb '#A52A2A' linetype 1 linewidth 3  # brown
+set style line 7 linecolor rgb '#5F9EA0' linetype 1 linewidth 3  # cadetblue
+set style line 8 linecolor rgb '#FF7F50' linetype 1 linewidth 3  # coral
+set style line 9 linecolor rgb '#8B008B' linetype 1 linewidth 3  # darkmagenta
+set style line 10 linecolor rgb '#6495ED' linetype 1 linewidth 3  # cornflowerblue
+set style line 11 linecolor rgb '#DC143C' linetype 1 linewidth 3  # crimson
+set style line 12 linecolor rgb '#556B2F' linetype 1 linewidth 3  # darkolivegreen
+set style line 13 linecolor rgb '#B8860B' linetype 1 linewidth 3  # darkgoldenrod
+set style line 14 linecolor rgb '#483D8B' linetype 1 linewidth 3  # darkslateblue
+set style line 15 linecolor rgb '#8B0000' linetype 1 linewidth 3  # darkred
+set style line 16 linecolor rgb '#A0522D' linetype 1 linewidth 3  # sienna
+set style line 17 linecolor rgb '#2E8B57' linetype 1 linewidth 3  # seagreen
+set style line 18 linecolor rgb '#4682B4' linetype 1 linewidth 3  # steelblue
+set style line 19 linecolor rgb '#8B4513' linetype 1 linewidth 3  # saddlebrown
+set style line 20 linecolor rgb '#000080' linetype 1 linewidth 3  # navy
+set style line 21 linecolor rgb '#C71585' linetype 1 linewidth 3  # mediumvioletred
+set style line 22 linecolor rgb '#DA70D6' linetype 1 linewidth 3  # orchid
+set style line 23 linecolor rgb '#DB7093' linetype 1 linewidth 3  # palevioletred
+set style line 24 linecolor rgb '#008080' linetype 1 linewidth 3  # teal
+set style line 25 linecolor rgb '#FF6347' linetype 1 linewidth 3  # tomato
+set style line 26 linecolor rgb '#800080' linetype 1 linewidth 3  # purple
+set style line 27 linecolor rgb '#FF0000' linetype 1 linewidth 3  # red
+set style line 28 linecolor rgb '#BC8F8F' linetype 1 linewidth 3  # rosybrown
+set style line 29 linecolor rgb '#008000' linetype 1 linewidth 3  # green
+set style line 30 linecolor rgb '#00FFFF' linetype 1 linewidth 3  # aqua
+
+set xlabel 'Rxcoord/sqrt(amu) bohr'
+set ylabel 'E/eV'
+set yrange [-1:20]
+
+pl 'gs-ev-1.dat' u 1:2 title 'Ground state' w lp ls 1 pt 7,\
+'state-ev-1.dat' u 1:2 notitle w lp ls 2 pt 7,\
+'state-ev-2.dat' u 1:2 notitle w lp ls 3 pt 7,\
+'state-ev-3.dat' u 1:2 notitle w lp ls 4 pt 7,\
+'state-ev-4.dat' u 1:2 notitle w lp ls 5 pt 7,\
+'state-ev-5.dat' u 1:2 notitle w lp ls 6 pt 7,\
+'state-ev-6.dat' u 1:2 notitle w lp ls 7 pt 7,\
+'state-ev-7.dat' u 1:2 notitle w lp ls 8 pt 7,\
+'state-ev-8.dat' u 1:2 notitle w lp ls 9 pt 7,\
+'state-ev-9.dat' u 1:2 notitle w lp ls 10 pt 7,\
+'state-ev-10.dat' u 1:2 notitle w lp ls 11 pt 7,\
+'state-ev-11.dat' u 1:2 notitle w lp ls 12 pt 7,\
+'state-ev-12.dat' u 1:2 notitle w lp ls 13 pt 7,\
+'state-ev-13.dat' u 1:2 notitle w lp ls 14 pt 7,\
+'state-ev-14.dat' u 1:2 notitle w lp ls 15 pt 7,\
+'state-ev-15.dat' u 1:2 notitle w lp ls 16 pt 7
